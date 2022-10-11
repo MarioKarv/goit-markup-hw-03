@@ -1,0 +1,262 @@
+:root{
+    --primary-text-color: #757575;
+    --accent-color: #2196F3;
+    --white: #ffffff;
+    --black: #000000;
+    --background: #2F303A;
+    --title: #212121;
+    --button: #F5F4FA;
+    --footer-meltel: rgba(255, 255, 255, 0.6);
+    --button-inactive: #188CE8;
+}
+
+
+
+.list{
+    list-style: none;
+}
+
+/* колір основного тексту #212121 */
+/* другорядний колір тексту #757575*/
+/* акцент #2196F3 */
+/* #FFFFFF білий */
+/* #2F303A другорядний */
+/*  */
+
+body{
+    color: var(--primary-text-color);
+    background-color: var(--white);
+    font-family: Roboto, sans-serif;
+}
+/* header */
+.logo{
+    color: var(--black);
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo-span{
+    color: var(--accent-color);
+}
+
+.logo-foot{
+    color: var(--white);
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.site-nav .link{
+    color: var(--title);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: var(--accent-color);
+}
+
+.site-nav .link.current{
+    color: var(--accent-color);
+}
+
+.contacts .meltel{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.contacts .meltel:hover,
+.contacts .meltel:focus{
+    color: var(--accent-color);
+}
+/* main */
+.hero{
+    background-color: var(--background);
+}
+
+.hero-title{
+    color: var(--white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.button-main{
+    color: var(--white);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.button-main:hover,
+.button-main:focus{
+    color: var(--white);
+    background-color: var(--button-inactive);
+}
+.buttons{
+    color: var(--title);
+    background-color: var(--button);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.buttons:hover,
+.buttons:focus{
+    color: var(--white);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.section{
+
+}
+
+.section-team{
+    background-color: var(--button);
+}
+
+.section-titlef{
+    display: none;
+}
+
+.section-title{
+    color: var(--title);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.section-ti{
+    color: var(--title);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+.section-ti-sec {
+    color: var(--title);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.section-ti-sec-descr{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.section-tp{
+    color: var(--title);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.section-tp-descr{
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+}
+
+.link{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer{
+    background: var(--background);
+}
+
+.footadd{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.address-link{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.address-link:hover,
+.address-link:focus{
+    color: var(--accent-color);
+}
+
+.address-mt{
+    color: var(--footer-meltel);
+    text-decoration: none;
+}
+
+.address-mt:hover,
+.address-mt:focus{
+    color: var(--accent-color);
+}
