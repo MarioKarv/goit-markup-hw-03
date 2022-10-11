@@ -10,12 +10,29 @@
     --button-inactive: #188CE8;
 }
 
+/* html{
+    box-sizing: border-box;
+}
 
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+} */
 
 .list{
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
+p,
+h1,
+h2,
+h3{
+    padding: 0;
+    margin: 0;
+}
 /* колір основного тексту #212121 */
 /* другорядний колір тексту #757575*/
 /* акцент #2196F3 */
@@ -24,11 +41,17 @@
 /*  */
 
 body{
+    margin: 0;
+    width: 1600px;
     color: var(--primary-text-color);
     background-color: var(--white);
     font-family: Roboto, sans-serif;
 }
 /* header */
+.top{
+    border-bottom: 1px solid #ECECEC;
+}
+
 .logo{
     color: var(--black);
     font-family: 'Raleway',sans-serif;
@@ -45,6 +68,8 @@ body{
 }
 
 .logo-foot{
+    display: inline-block;
+    margin-bottom: 20px;
     color: var(--white);
     font-family: 'Raleway',sans-serif;
     font-style: normal;
@@ -86,12 +111,25 @@ body{
 .contacts .meltel:focus{
     color: var(--accent-color);
 }
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+}
 /* main */
 .hero{
     background-color: var(--background);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title{
+    margin-bottom: 30px;
+    margin-top: 0;
     color: var(--white);
     font-weight: 900;
     font-size: 44px;
@@ -101,6 +139,11 @@ body{
     text-transform: uppercase;
 }
 .button-main{
+    display: inline-block;
+    border-radius: 4px;
+    border: var(--accent-color);
+    padding: 10px 32px;
+    min-width: 216px;
     color: var(--white);
     background-color: var(--accent-color);
     cursor: pointer;
@@ -109,6 +152,8 @@ body{
     font-size: 16px;
     line-height: 1.9;
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -139,19 +184,29 @@ body{
     font-family: inherit;
 }
 
-.section{
-
+.section,
+.section-team,
+.section-wwd{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
+.section-wwd{
+    padding-top: 0;
+}
 .section-team{
-    background-color: var(--button);
+    background-color: var(--button);  
 }
 
+.list li{
+    width:300px;
+}
 .section-titlef{
     display: none;
 }
 
 .section-title{
+    margin-bottom: 50px;
     color: var(--title);
     font-weight: 700;
     font-size: 36px;
@@ -161,6 +216,7 @@ body{
 }
 
 .section-ti{
+    margin-bottom: 10px;
     color: var(--title);
     font-weight: 700;
     font-size: 14px;
@@ -230,6 +286,8 @@ body{
 /* footer */
 .footer{
     background: var(--background);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footadd{
@@ -259,4 +317,8 @@ body{
 .address-mt:hover,
 .address-mt:focus{
     color: var(--accent-color);
+}
+
+.address li{
+    margin-bottom: 9px;
 }
