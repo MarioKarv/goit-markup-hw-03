@@ -26,6 +26,7 @@
     list-style: none;
 }
 
+
 p,
 h1,
 h2,
@@ -79,7 +80,15 @@ body{
     letter-spacing: 0.03em;
     text-decoration: none;
 }
+.site-nav{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
 
+/* .site-nav .items:not(:last-child){
+    margin-right: 50px;
+} */
 .site-nav .link{
     color: var(--title);
     font-weight: 500;
@@ -210,8 +219,17 @@ body{
 .list li{
     width:300px;
 }
-.section-titlef{
-    display: none;
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .section-title{
