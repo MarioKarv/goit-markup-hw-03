@@ -30,7 +30,8 @@
 p,
 h1,
 h2,
-h3{
+h3,
+ul{
     padding: 0;
     margin: 0;
 }
@@ -82,13 +83,15 @@ body{
 }
 .site-nav{
     display: flex;
-    padding: 0;
-    margin: 0;
 }
 
-/* .site-nav .items:not(:last-child){
-    margin-right: 50px;
+/* .site-nav li{
+    outline: 2px solid tomato;
 } */
+
+.site-nav .items:not(:last-child){
+    margin-right: 50px;
+}
 .site-nav .link{
     color: var(--title);
     font-weight: 500;
@@ -216,9 +219,14 @@ body{
     background-color: var(--button);  
 }
 
-.list li{
-    width:300px;
+.flex {
+    display: flex;
 }
+
+.flex li:not(:last-child){
+    margin-right: 30px;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
