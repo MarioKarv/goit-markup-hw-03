@@ -41,7 +41,7 @@ h3{
 /*  */
 
 body{
-    margin: 0;
+    margin: 0 auto;
     width: 1600px;
     color: var(--primary-text-color);
     background-color: var(--white);
@@ -165,6 +165,10 @@ body{
     background-color: var(--button-inactive);
 }
 .buttons{
+    padding: 6px 22px;
+    display: inline-block;
+    border-radius: 4px;
+    border: var(--button);
     color: var(--title);
     background-color: var(--button);
     cursor: pointer;
@@ -174,27 +178,32 @@ body{
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .buttons:hover,
 .buttons:focus{
+    border: var(--accent-color);
     color: var(--white);
     background-color: var(--accent-color);
     cursor: pointer;
     font-family: inherit;
 }
 
-.section,
-.section-team,
-.section-wwd{
+.butlist{
+    margin-bottom: 50px;
+}
+.section{
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.section-wwd{
+.wwd{
     padding-top: 0;
 }
-.section-team{
+.team{
     background-color: var(--button);  
 }
 
@@ -232,6 +241,7 @@ body{
     letter-spacing: 0.03em;
 }
 .section-ti-sec {
+    margin-bottom: 10px;
     color: var(--title);
     font-weight: 500;
     font-size: 16px;
@@ -248,6 +258,7 @@ body{
     letter-spacing: 0.03em;
 }
 .section-tp{
+    margin-bottom: 4px;
     color: var(--title);
     font-weight: 700;
     font-size: 18px;
@@ -267,8 +278,33 @@ body{
     text-decoration: none;
 }
 
+.img-desc{
+    display: block;
+}
 
+.description-p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 270px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+}
 
+.img-desc-w{
+    display: block;
+}
+
+.description-w{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: var(--white);
+    border: 1px solid #EEEEEE;
+    width: 370px;
+}
 
 
 
@@ -319,6 +355,7 @@ body{
     color: var(--accent-color);
 }
 
-.address li{
+.forreatr{
+    display: inline-block;
     margin-bottom: 9px;
 }
