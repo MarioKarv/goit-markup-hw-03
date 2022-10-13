@@ -127,6 +127,9 @@ body{
 }
 
 .contacts .meltel{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
